@@ -17,7 +17,6 @@ h2 { font:800 22px var(--display); text-transform:uppercase; letter-spacing:.03e
 .tabs button[aria-pressed="true"] { background:var(--ink); color:var(--bg); border-color:var(--ink) }
 .tabs button:focus-visible { outline:2px solid var(--good); outline-offset:2px }
 .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:10px }
-.hero { grid-template-columns:minmax(0,320px) }
 .tile { background:var(--panel); border:1px solid var(--line); border-left:5px solid var(--line); border-radius:12px; padding:12px; display:grid; gap:2px; min-width:0 }
 .tile.good { border-left-color:var(--good) } .tile.mid { border-left-color:var(--mid) } .tile.bad { border-left-color:var(--bad) }
 .tl { font:600 13px var(--body); color:var(--muted) }
@@ -25,17 +24,26 @@ h2 { font:800 22px var(--display); text-transform:uppercase; letter-spacing:.03e
 .tile.good .pct { color:var(--good) } .tile.mid .pct { color:var(--mid) } .tile.bad .pct { color:var(--bad) } .tile.empty .pct { color:var(--muted) }
 .wl, .pf { font:500 12px var(--mono); color:var(--muted) }
 .up { color:var(--good) } .down { color:var(--bad) }
+.mine { font:600 12px var(--mono); color:var(--ink); border-top:1px dashed var(--line); margin-top:6px; padding-top:6px }
+.two { grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),320px)) }
 .note { margin-top:30px; color:var(--muted); font-size:13px; max-width:70ch }
 </style></head><body><div class="wrap">
 <h1>Bety Skaner stats</h1>
-<div class="meta">Updated 1.10.2026, 23:17 · 0 settled picks · 31 waiting for results · 0 void</div>
+<div class="meta">Updated 2.10.2026, 02:19 · 0 settled picks · 31 waiting for results · 0 void</div>
 <div class="tabs" role="group" aria-label="Period"><button type="button" data-p="all" aria-pressed="true">All time</button><button type="button" data-p="30" aria-pressed="false">Last 30 days</button><button type="button" data-p="7" aria-pressed="false">Last 7 days</button></div>
 <section data-p="all">
-  <div class="grid hero"><div class="tile empty">
+  <div class="grid two"><div class="tile empty">
     <div class="tl">📊 All bets, overall</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
+  </div><div class="tile empty">
+    <div class="tl">🎟️ My AKO slips</div>
+    <div class="pct">–</div>
+    <div class="wl">no settled bets yet</div>
+    <div class="pf"></div>
+    
   </div></div>
   <h2>Groups</h2>
   <div class="grid"><div class="tile empty">
@@ -43,26 +51,31 @@ h2 { font:800 22px var(--display); text-transform:uppercase; letter-spacing:.03e
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🔥 TOP 3</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">💰 Value</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">👻 ALT (hidden line)</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">⚽ All picks</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div></div>
   <h2>Markets</h2>
   <div class="grid"><div class="tile empty">
@@ -70,64 +83,76 @@ h2 { font:800 22px var(--display); text-transform:uppercase; letter-spacing:.03e
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🚩 Corners</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🏒 NHL goals</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div></div>
   <h2>Cards lines</h2><div class="grid"><div class="tile empty">
     <div class="tl">🟨 u4.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨 u5.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨 u6.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div></div>
   <h2>Corners lines</h2><div class="grid"><div class="tile empty">
     <div class="tl">🚩 u10.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🚩 u11.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🚩 u12.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div></div>
   <h2>NHL lines (with OT)</h2><div class="grid"><div class="tile empty">
     <div class="tl">🏒 o4.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🏒 o5.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🏒 o6.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div></div>
   <h2>Cards + corners combos</h2>
   <div class="grid"><div class="tile empty">
@@ -135,57 +160,74 @@ h2 { font:800 22px var(--display); text-transform:uppercase; letter-spacing:.03e
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨🚩 u4.5 + u10.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨🚩 u4.5 + u11.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨🚩 u4.5 + u12.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨🚩 u5.5 + u10.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨🚩 u5.5 + u11.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨🚩 u5.5 + u12.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨🚩 u6.5 + u10.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨🚩 u6.5 + u11.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨🚩 u6.5 + u12.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div></div></section><section data-p="30" hidden>
-  <div class="grid hero"><div class="tile empty">
+  <div class="grid two"><div class="tile empty">
     <div class="tl">📊 All bets, overall</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
+  </div><div class="tile empty">
+    <div class="tl">🎟️ My AKO slips</div>
+    <div class="pct">–</div>
+    <div class="wl">no settled bets yet</div>
+    <div class="pf"></div>
+    
   </div></div>
   <h2>Groups</h2>
   <div class="grid"><div class="tile empty">
@@ -193,26 +235,31 @@ h2 { font:800 22px var(--display); text-transform:uppercase; letter-spacing:.03e
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🔥 TOP 3</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">💰 Value</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">👻 ALT (hidden line)</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">⚽ All picks</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div></div>
   <h2>Markets</h2>
   <div class="grid"><div class="tile empty">
@@ -220,64 +267,76 @@ h2 { font:800 22px var(--display); text-transform:uppercase; letter-spacing:.03e
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🚩 Corners</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🏒 NHL goals</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div></div>
   <h2>Cards lines</h2><div class="grid"><div class="tile empty">
     <div class="tl">🟨 u4.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨 u5.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨 u6.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div></div>
   <h2>Corners lines</h2><div class="grid"><div class="tile empty">
     <div class="tl">🚩 u10.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🚩 u11.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🚩 u12.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div></div>
   <h2>NHL lines (with OT)</h2><div class="grid"><div class="tile empty">
     <div class="tl">🏒 o4.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🏒 o5.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🏒 o6.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div></div>
   <h2>Cards + corners combos</h2>
   <div class="grid"><div class="tile empty">
@@ -285,57 +344,74 @@ h2 { font:800 22px var(--display); text-transform:uppercase; letter-spacing:.03e
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨🚩 u4.5 + u10.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨🚩 u4.5 + u11.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨🚩 u4.5 + u12.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨🚩 u5.5 + u10.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨🚩 u5.5 + u11.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨🚩 u5.5 + u12.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨🚩 u6.5 + u10.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨🚩 u6.5 + u11.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨🚩 u6.5 + u12.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div></div></section><section data-p="7" hidden>
-  <div class="grid hero"><div class="tile empty">
+  <div class="grid two"><div class="tile empty">
     <div class="tl">📊 All bets, overall</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
+  </div><div class="tile empty">
+    <div class="tl">🎟️ My AKO slips</div>
+    <div class="pct">–</div>
+    <div class="wl">no settled bets yet</div>
+    <div class="pf"></div>
+    
   </div></div>
   <h2>Groups</h2>
   <div class="grid"><div class="tile empty">
@@ -343,26 +419,31 @@ h2 { font:800 22px var(--display); text-transform:uppercase; letter-spacing:.03e
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🔥 TOP 3</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">💰 Value</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">👻 ALT (hidden line)</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">⚽ All picks</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div></div>
   <h2>Markets</h2>
   <div class="grid"><div class="tile empty">
@@ -370,64 +451,76 @@ h2 { font:800 22px var(--display); text-transform:uppercase; letter-spacing:.03e
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🚩 Corners</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🏒 NHL goals</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div></div>
   <h2>Cards lines</h2><div class="grid"><div class="tile empty">
     <div class="tl">🟨 u4.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨 u5.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨 u6.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div></div>
   <h2>Corners lines</h2><div class="grid"><div class="tile empty">
     <div class="tl">🚩 u10.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🚩 u11.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🚩 u12.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div></div>
   <h2>NHL lines (with OT)</h2><div class="grid"><div class="tile empty">
     <div class="tl">🏒 o4.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🏒 o5.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🏒 o6.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div></div>
   <h2>Cards + corners combos</h2>
   <div class="grid"><div class="tile empty">
@@ -435,55 +528,66 @@ h2 { font:800 22px var(--display); text-transform:uppercase; letter-spacing:.03e
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨🚩 u4.5 + u10.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨🚩 u4.5 + u11.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨🚩 u4.5 + u12.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨🚩 u5.5 + u10.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨🚩 u5.5 + u11.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨🚩 u5.5 + u12.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨🚩 u6.5 + u10.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨🚩 u6.5 + u11.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div><div class="tile empty">
     <div class="tl">🟨🚩 u6.5 + u12.5</div>
     <div class="pct">–</div>
     <div class="wl">no settled bets yet</div>
     <div class="pf"></div>
+    <div class="mine">your bets: –</div>
   </div></div></section>
 <p class="note">Hit % = bets won / bets settled. Profit (u) = betting 1 unit on every pick at its Betclic odds; picks without odds count for hit % only.
 Pewniaki are judged at their pewniak line, TOP 3 and 👻 ALT at the line they were chosen at, everything else at the pick line.
-Combos win only when cards and corners both stay under. Postponed or cancelled matches don't count.</p>
+Combos win only when cards and corners both stay under. Postponed or cancelled matches don't count.<br>
+"your bets" = the legs of my own AKO slips in that square (won / settled). 🎟️ My AKO slips: a slip wins only if every leg wins; profit in units = 1 unit per slip at the slip's odds.</p>
 </div>
 <script>
 document.querySelectorAll('.tabs button').forEach((b) => b.addEventListener('click', () => {
