@@ -41,7 +41,7 @@ section > .hint:first-child { margin-top:14px }
 .muted { color:var(--muted); font-weight:400; font-size:13px }
 </style></head><body><div class="wrap">
 <h1>Bety Skaner stats</h1>
-<div class="meta">Updated 3.10.2026, 22:55 · 17 settled picks since 2026-10-02 · 0 waiting for results · 0 void</div>
+<div class="meta">Updated 3.10.2026, 23:07 · 17 settled picks since 2026-10-02 · 0 waiting for results · 0 void</div>
 <div class="tabs" role="group" aria-label="Period"><button type="button" data-p="all" aria-pressed="true">All time</button><button type="button" data-p="30" aria-pressed="false">Last 30 days</button><button type="button" data-p="7" aria-pressed="false">Last 7 days</button></div>
 <section data-p="all">
   <p class="hint">The big three in every tile: <b>predicted</b> = the average hr (weighted hit rate) the picks had before kickoff · <b>real</b> = the big %, picks that actually won · <b>your slips</b> = how your own bets did. Predicted well above real = the hr is too optimistic there. Big % = bets won out of bets settled. <b>u</b> = profit if you bet 1 unit on every pick at its Betclic odds (1u = your usual stake, e.g. −0.62u at 100 zł = −62 zł). <b>ROI</b> = profit per 100 bet (−21% = lost 21 zł for every 100 zł). <b>your slips</b> = your own AKO slips with a leg in that square, won/lost by the whole slip (a winning leg on a lost slip is a loss); the u there is only that leg's part: a won slip's profit is split by each leg's odds − 1 (e.g. @1,45 + @1,50 + @1,25 → 37.5% / 41.7% / 20.8%), a lost slip's −1u goes to the leg(s) that lost.</p>
@@ -51,13 +51,13 @@ section > .hint:first-child { margin-top:14px }
     <div class="pred">predicted 86% (hr) · real 76%</div>
     <div class="wl">13 won / 4 lost</div>
     <div class="pf"><span class="down">-1.46u</span> · ROI -9%</div>
-    <div class="mine">your slips: 1/4 (25%) · <span class="down">-1.97u</span></div>
+    <div class="mine">your slips: 1/4 (25%) · <span class="up">+1.13u</span></div>
   </div><div class="tile bad">
     <div class="tl">🎟️ My AKO slips</div>
     <div class="pct">25%</div>
     
     <div class="wl">1 won / 3 lost</div>
-    <div class="pf"><span class="down">-1.97u</span> · ROI -49%</div>
+    <div class="pf"><span class="up">+1.13u</span> · ROI +28%</div>
     
   </div><div class="tile bad">
     <div class="tl">🤖 Bot coupons</div>
@@ -78,12 +78,12 @@ section > .hint:first-child { margin-top:14px }
     <div class="pct">100%</div>
     
     <div class="wl">1 won / 0 lost</div>
-    <div class="pf"><span class="up">+1.03u</span> · ROI +103%</div>
+    <div class="pf"><span class="up">+4.13u</span> · ROI +413%</div>
     
   </div></div>
-  <p class="hint">🤖 Bot coupons = every leg a bot pick (the scanner picked that market on that match) · 🤖🙋 Bot + me = bot legs and your own legs on one coupon · 🙋 Me-only = every leg yours. Whole coupons: won only if every leg won. 1 unit per coupon at its odds.</p>
+  <p class="hint">🤖 Bot coupons = every leg a bot pick (the scanner picked that market on that match) · 🤖🙋 Bot + me = bot legs and your own legs on one coupon · 🙋 Me-only = every leg yours. Whole coupons: won only if every leg won. u = your real money in units (1u = your usual stake, a coupon at 4× the stake counts 4×), so the three add up to 🎟️ My AKO slips.</p>
   <h2>My slips by size</h2>
-  <p class="hint">Your slips by how many legs they had. A slip wins only if every leg wins; a void leg drops out. 1 unit per slip at the slip's odds.</p>
+  <p class="hint">Your slips by how many legs they had. A slip wins only if every leg wins; a void leg drops out. u = your real money in units (1u = your usual stake).</p>
   <div class="grid"><div class="tile empty">
     <div class="tl">🎟️ Singles</div>
     <div class="pct">–</div>
@@ -96,7 +96,7 @@ section > .hint:first-child { margin-top:14px }
     <div class="pct">50%</div>
     
     <div class="wl">1 won / 1 lost</div>
-    <div class="pf"><span class="up">+0.03u</span> · ROI +2%</div>
+    <div class="pf"><span class="up">+3.13u</span> · ROI +157%</div>
     
   </div><div class="tile bad">
     <div class="tl">🎟️ 3 legs</div>
@@ -356,8 +356,8 @@ section > .hint:first-child { margin-top:14px }
     <div class="pct">100%</div>
     
     <div class="wl">2 won / 0 lost</div>
-    <div class="pf"><span class="up">+1.03u</span> · ROI +103%</div>
-    <div class="mine">your slips: 1/1 (100%) · <span class="up">+1.03u</span></div>
+    <div class="pf"><span class="up">+4.13u</span> · ROI +413%</div>
+    <div class="mine">your slips: 1/1 (100%) · <span class="up">+4.13u</span></div>
   </div><div class="tile empty">
     <div class="tl">🤝 Win or draw (1X / X2)</div>
     <div class="pct">–</div>
@@ -380,8 +380,8 @@ section > .hint:first-child { margin-top:14px }
     <div class="pct">100%</div>
     
     <div class="wl">3 won / 0 lost</div>
-    <div class="pf"><span class="up">+1.03u</span> · ROI +52%</div>
-    <div class="mine">your slips: 1/2 (50%) · <span class="up">+1.03u</span></div>
+    <div class="pf"><span class="up">+4.13u</span> · ROI +207%</div>
+    <div class="mine">your slips: 1/2 (50%) · <span class="up">+4.13u</span></div>
   </div></div>
   <h2>Cards + corners combos</h2>
   <p class="hint">Wins only when cards and corners of the same match both stay under. u / ROI use Betclic's MyCombi odds for the pair; combos without MyCombi odds count for the % only.</p>
@@ -739,13 +739,13 @@ section > .hint:first-child { margin-top:14px }
     <div class="pred">predicted 86% (hr) · real 76%</div>
     <div class="wl">13 won / 4 lost</div>
     <div class="pf"><span class="down">-1.46u</span> · ROI -9%</div>
-    <div class="mine">your slips: 1/4 (25%) · <span class="down">-1.97u</span></div>
+    <div class="mine">your slips: 1/4 (25%) · <span class="up">+1.13u</span></div>
   </div><div class="tile bad">
     <div class="tl">🎟️ My AKO slips</div>
     <div class="pct">25%</div>
     
     <div class="wl">1 won / 3 lost</div>
-    <div class="pf"><span class="down">-1.97u</span> · ROI -49%</div>
+    <div class="pf"><span class="up">+1.13u</span> · ROI +28%</div>
     
   </div><div class="tile bad">
     <div class="tl">🤖 Bot coupons</div>
@@ -766,12 +766,12 @@ section > .hint:first-child { margin-top:14px }
     <div class="pct">100%</div>
     
     <div class="wl">1 won / 0 lost</div>
-    <div class="pf"><span class="up">+1.03u</span> · ROI +103%</div>
+    <div class="pf"><span class="up">+4.13u</span> · ROI +413%</div>
     
   </div></div>
-  <p class="hint">🤖 Bot coupons = every leg a bot pick (the scanner picked that market on that match) · 🤖🙋 Bot + me = bot legs and your own legs on one coupon · 🙋 Me-only = every leg yours. Whole coupons: won only if every leg won. 1 unit per coupon at its odds.</p>
+  <p class="hint">🤖 Bot coupons = every leg a bot pick (the scanner picked that market on that match) · 🤖🙋 Bot + me = bot legs and your own legs on one coupon · 🙋 Me-only = every leg yours. Whole coupons: won only if every leg won. u = your real money in units (1u = your usual stake, a coupon at 4× the stake counts 4×), so the three add up to 🎟️ My AKO slips.</p>
   <h2>My slips by size</h2>
-  <p class="hint">Your slips by how many legs they had. A slip wins only if every leg wins; a void leg drops out. 1 unit per slip at the slip's odds.</p>
+  <p class="hint">Your slips by how many legs they had. A slip wins only if every leg wins; a void leg drops out. u = your real money in units (1u = your usual stake).</p>
   <div class="grid"><div class="tile empty">
     <div class="tl">🎟️ Singles</div>
     <div class="pct">–</div>
@@ -784,7 +784,7 @@ section > .hint:first-child { margin-top:14px }
     <div class="pct">50%</div>
     
     <div class="wl">1 won / 1 lost</div>
-    <div class="pf"><span class="up">+0.03u</span> · ROI +2%</div>
+    <div class="pf"><span class="up">+3.13u</span> · ROI +157%</div>
     
   </div><div class="tile bad">
     <div class="tl">🎟️ 3 legs</div>
@@ -1044,8 +1044,8 @@ section > .hint:first-child { margin-top:14px }
     <div class="pct">100%</div>
     
     <div class="wl">2 won / 0 lost</div>
-    <div class="pf"><span class="up">+1.03u</span> · ROI +103%</div>
-    <div class="mine">your slips: 1/1 (100%) · <span class="up">+1.03u</span></div>
+    <div class="pf"><span class="up">+4.13u</span> · ROI +413%</div>
+    <div class="mine">your slips: 1/1 (100%) · <span class="up">+4.13u</span></div>
   </div><div class="tile empty">
     <div class="tl">🤝 Win or draw (1X / X2)</div>
     <div class="pct">–</div>
@@ -1068,8 +1068,8 @@ section > .hint:first-child { margin-top:14px }
     <div class="pct">100%</div>
     
     <div class="wl">3 won / 0 lost</div>
-    <div class="pf"><span class="up">+1.03u</span> · ROI +52%</div>
-    <div class="mine">your slips: 1/2 (50%) · <span class="up">+1.03u</span></div>
+    <div class="pf"><span class="up">+4.13u</span> · ROI +207%</div>
+    <div class="mine">your slips: 1/2 (50%) · <span class="up">+4.13u</span></div>
   </div></div>
   <h2>Cards + corners combos</h2>
   <p class="hint">Wins only when cards and corners of the same match both stay under. u / ROI use Betclic's MyCombi odds for the pair; combos without MyCombi odds count for the % only.</p>
@@ -1427,13 +1427,13 @@ section > .hint:first-child { margin-top:14px }
     <div class="pred">predicted 86% (hr) · real 76%</div>
     <div class="wl">13 won / 4 lost</div>
     <div class="pf"><span class="down">-1.46u</span> · ROI -9%</div>
-    <div class="mine">your slips: 1/4 (25%) · <span class="down">-1.97u</span></div>
+    <div class="mine">your slips: 1/4 (25%) · <span class="up">+1.13u</span></div>
   </div><div class="tile bad">
     <div class="tl">🎟️ My AKO slips</div>
     <div class="pct">25%</div>
     
     <div class="wl">1 won / 3 lost</div>
-    <div class="pf"><span class="down">-1.97u</span> · ROI -49%</div>
+    <div class="pf"><span class="up">+1.13u</span> · ROI +28%</div>
     
   </div><div class="tile bad">
     <div class="tl">🤖 Bot coupons</div>
@@ -1454,12 +1454,12 @@ section > .hint:first-child { margin-top:14px }
     <div class="pct">100%</div>
     
     <div class="wl">1 won / 0 lost</div>
-    <div class="pf"><span class="up">+1.03u</span> · ROI +103%</div>
+    <div class="pf"><span class="up">+4.13u</span> · ROI +413%</div>
     
   </div></div>
-  <p class="hint">🤖 Bot coupons = every leg a bot pick (the scanner picked that market on that match) · 🤖🙋 Bot + me = bot legs and your own legs on one coupon · 🙋 Me-only = every leg yours. Whole coupons: won only if every leg won. 1 unit per coupon at its odds.</p>
+  <p class="hint">🤖 Bot coupons = every leg a bot pick (the scanner picked that market on that match) · 🤖🙋 Bot + me = bot legs and your own legs on one coupon · 🙋 Me-only = every leg yours. Whole coupons: won only if every leg won. u = your real money in units (1u = your usual stake, a coupon at 4× the stake counts 4×), so the three add up to 🎟️ My AKO slips.</p>
   <h2>My slips by size</h2>
-  <p class="hint">Your slips by how many legs they had. A slip wins only if every leg wins; a void leg drops out. 1 unit per slip at the slip's odds.</p>
+  <p class="hint">Your slips by how many legs they had. A slip wins only if every leg wins; a void leg drops out. u = your real money in units (1u = your usual stake).</p>
   <div class="grid"><div class="tile empty">
     <div class="tl">🎟️ Singles</div>
     <div class="pct">–</div>
@@ -1472,7 +1472,7 @@ section > .hint:first-child { margin-top:14px }
     <div class="pct">50%</div>
     
     <div class="wl">1 won / 1 lost</div>
-    <div class="pf"><span class="up">+0.03u</span> · ROI +2%</div>
+    <div class="pf"><span class="up">+3.13u</span> · ROI +157%</div>
     
   </div><div class="tile bad">
     <div class="tl">🎟️ 3 legs</div>
@@ -1732,8 +1732,8 @@ section > .hint:first-child { margin-top:14px }
     <div class="pct">100%</div>
     
     <div class="wl">2 won / 0 lost</div>
-    <div class="pf"><span class="up">+1.03u</span> · ROI +103%</div>
-    <div class="mine">your slips: 1/1 (100%) · <span class="up">+1.03u</span></div>
+    <div class="pf"><span class="up">+4.13u</span> · ROI +413%</div>
+    <div class="mine">your slips: 1/1 (100%) · <span class="up">+4.13u</span></div>
   </div><div class="tile empty">
     <div class="tl">🤝 Win or draw (1X / X2)</div>
     <div class="pct">–</div>
@@ -1756,8 +1756,8 @@ section > .hint:first-child { margin-top:14px }
     <div class="pct">100%</div>
     
     <div class="wl">3 won / 0 lost</div>
-    <div class="pf"><span class="up">+1.03u</span> · ROI +52%</div>
-    <div class="mine">your slips: 1/2 (50%) · <span class="up">+1.03u</span></div>
+    <div class="pf"><span class="up">+4.13u</span> · ROI +207%</div>
+    <div class="mine">your slips: 1/2 (50%) · <span class="up">+4.13u</span></div>
   </div></div>
   <h2>Cards + corners combos</h2>
   <p class="hint">Wins only when cards and corners of the same match both stay under. u / ROI use Betclic's MyCombi odds for the pair; combos without MyCombi odds count for the % only.</p>
