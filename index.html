@@ -39,10 +39,11 @@ section > .hint:first-child { margin-top:14px }
 .hc { display:flex; flex-wrap:wrap; gap:6px; margin-top:6px }
 .chip { font:500 12px var(--mono); background:var(--chip); border-radius:999px; padding:2px 8px; white-space:nowrap }
 .muted { color:var(--muted); font-weight:400; font-size:13px }
+.only { display:flex; align-items:center; gap:6px; font:600 14px var(--body); padding:8px 6px; cursor:pointer }
 .pages { align-items:center; margin-top:12px } .pages button:disabled { opacity:.4; cursor:default }
 </style></head><body><div class="wrap">
 <h1>Bety Skaner stats</h1>
-<div class="meta">Updated 3.10.2026, 23:18 · 17 settled picks since 2026-10-02 · 11 waiting for results · 0 void</div>
+<div class="meta">Updated 3.10.2026, 23:21 · 17 settled picks since 2026-10-02 · 11 waiting for results · 0 void</div>
 <div class="tabs" role="group" aria-label="Period"><button type="button" data-p="all" aria-pressed="true">All time</button><button type="button" data-p="30" aria-pressed="false">Last 30 days</button><button type="button" data-p="7" aria-pressed="false">Last 7 days</button></div>
 <section data-p="all">
   <p class="hint">The big three in every tile: <b>predicted</b> = the average hr (weighted hit rate) the picks had before kickoff · <b>real</b> = the big %, picks that actually won · <b>your slips</b> = how your own bets did. Predicted well above real = the hr is too optimistic there. Big % = bets won out of bets settled. <b>u</b> = profit if you bet 1 unit on every pick at its Betclic odds (1u = your usual stake, e.g. −0.62u at 100 zł = −62 zł). <b>ROI</b> = profit per 100 bet (−21% = lost 21 zł for every 100 zł). <b>your slips</b> = your own AKO slips with a leg in that square, won/lost by the whole slip (a winning leg on a lost slip is a loss); the u there is only that leg's part: a won slip's profit is split by each leg's odds − 1 (e.g. @1,45 + @1,50 + @1,25 → 37.5% / 41.7% / 20.8%), a lost slip's −1u goes to the leg(s) that lost.</p>
@@ -2110,8 +2111,8 @@ section > .hint:first-child { margin-top:14px }
     
   </div></div></section>
 <h2>History</h2>
-  <p class="hint">Every resolved bet, newest first, and where it counted. The main line is the pick line at 1u (that's what ⚽ All picks, the markets, lines and 📐 patterns count). Chips: 📐 its H2H pattern · ⭐ pewniak line · 🔥 TOP 5 line · 💰 value · 👻 ALT line · 🔀 MIXED pair, each with its own ✅/❌ when judged at another line · 🎟️ your slip's leg and its part of the slip.</p>
-  <div class="tabs pager" role="group" aria-label="Rows per page"><button type="button" data-n="10" aria-pressed="true">Last 10</button><button type="button" data-n="20" aria-pressed="false">Last 20</button><button type="button" data-n="50" aria-pressed="false">Last 50</button></div>
+  <p class="hint">Every resolved bet, newest first, and where it counted. Tick 🎟️ Only my bets to see just the ones that were on your slips. The main line is the pick line at 1u (that's what ⚽ All picks, the markets, lines and 📐 patterns count). Chips: 📐 its H2H pattern · ⭐ pewniak line · 🔥 TOP 5 line · 💰 value · 👻 ALT line · 🔀 MIXED pair, each with its own ✅/❌ when judged at another line · 🎟️ your slip's leg and its part of the slip.</p>
+  <div class="tabs pager" role="group" aria-label="Rows per page"><button type="button" data-n="10" aria-pressed="true">Last 10</button><button type="button" data-n="20" aria-pressed="false">Last 20</button><button type="button" data-n="50" aria-pressed="false">Last 50</button><label class="only"><input type="checkbox" class="onlybets"> 🎟️ Only my bets</label></div>
   <ol class="hist"><li><div class="hm">03.10 19:45 · EHC Biel-Bienne – HC Davos</div>
         <div class="hb">🏒 o3.5 @1,16 → 7 ✅ <span class="up">+0.16u</span></div>
         <div class="hc"><span class="chip">📐 8/10</span></div></li><li><div class="hm">03.10 19:45 · Fribourg-Gottéron – HC Ambrì-Piotta</div>
@@ -2128,31 +2129,31 @@ section > .hint:first-child { margin-top:14px }
         <div class="hb">🏒 o3.5 @1,16 → 5 ✅ <span class="up">+0.16u</span></div>
         <div class="hc"><span class="chip">📐 8/10</span><span class="chip">👻 o5.5 ❌</span></div></li><li><div class="hm">03.10 17:00 · VHK ROBE Vsetín – HC Frýdek-Místek</div>
         <div class="hb">🏒 o4.5 @1,31 → 7 ✅ <span class="up">+0.31u</span></div>
-        <div class="hc"><span class="chip">📐 8/10</span><span class="chip">⭐ o3.5 ✅</span></div></li><li><div class="hm">03.10 16:00 · Narvik Hockey Arctic Eagles – Lillehammer IK</div>
+        <div class="hc"><span class="chip">📐 8/10</span><span class="chip">⭐ o3.5 ✅</span></div></li><li data-bet><div class="hm">03.10 16:00 · Narvik Hockey Arctic Eagles – Lillehammer IK</div>
         <div class="hb">🏒 o4.5 @1,21 → 8 ✅ <span class="up">+0.21u</span></div>
-        <div class="hc"><span class="chip">📐 9/10</span><span class="chip">⭐ o3.5 ✅</span><span class="chip">💰</span><span class="chip">🎟️ 2026-10-03-a o3.5 ✅ → <span class="up">+0.00u</span></span></div></li><li><div class="hm">03.10 16:00 · Ringerike IHK – Nidaros Hockey</div>
+        <div class="hc"><span class="chip">📐 9/10</span><span class="chip">⭐ o3.5 ✅</span><span class="chip">💰</span><span class="chip">🎟️ 2026-10-03-a o3.5 ✅ → <span class="up">+0.00u</span></span></div></li><li data-bet><div class="hm">03.10 16:00 · Ringerike IHK – Nidaros Hockey</div>
         <div class="hb">🏒 o3.5 @1,15 → 5 ✅ <span class="up">+0.15u</span></div>
-        <div class="hc"><span class="chip">📐 9/9</span><span class="chip">🔥1 o3.5 ✅</span><span class="chip">💰</span><span class="chip">🎟️ 2026-10-03-a o3.5 ✅ → <span class="up">+0.00u</span></span></div></li><li><div class="hm">Malmö Redhawks – Brynäs IF (LeBull, bot idea o3.5, taken live at o2.5)</div>
+        <div class="hc"><span class="chip">📐 9/9</span><span class="chip">🔥1 o3.5 ✅</span><span class="chip">💰</span><span class="chip">🎟️ 2026-10-03-a o3.5 ✅ → <span class="up">+0.00u</span></span></div></li><li data-bet><div class="hm">Malmö Redhawks – Brynäs IF (LeBull, bot idea o3.5, taken live at o2.5)</div>
         <div class="hb">🏒 o2.5 @1,5 ❌ <span class="muted">(your bet only, not a scanner pick)</span></div>
-        <div class="hc"><span class="chip">🎟️ 2026-10-03-a o2.5 ❌ → <span class="down">-1.00u</span></span></div></li><li><div class="hm">England – Croatia</div>
+        <div class="hc"><span class="chip">🎟️ 2026-10-03-a o2.5 ❌ → <span class="down">-1.00u</span></span></div></li><li data-bet><div class="hm">England – Croatia</div>
         <div class="hb">🏆 1 ✅ <span class="muted">(your bet only, not a scanner pick)</span></div>
-        <div class="hc"><span class="chip">🎟️ 2026-10-03-b 1 ✅ → <span class="up">+0.52u</span></span></div></li><li><div class="hm">Switzerland – Slovenia</div>
+        <div class="hc"><span class="chip">🎟️ 2026-10-03-b 1 ✅ → <span class="up">+0.52u</span></span></div></li><li data-bet><div class="hm">Switzerland – Slovenia</div>
         <div class="hb">🏆 1 ✅ <span class="muted">(your bet only, not a scanner pick)</span></div>
-        <div class="hc"><span class="chip">🎟️ 2026-10-03-b 1 ✅ → <span class="up">+0.52u</span></span></div></li><li><div class="hm">03.10 02:00 · Winnipeg Jets – Boston Bruins</div>
+        <div class="hc"><span class="chip">🎟️ 2026-10-03-b 1 ✅ → <span class="up">+0.52u</span></span></div></li><li data-bet><div class="hm">03.10 02:00 · Winnipeg Jets – Boston Bruins</div>
         <div class="hb">🏒 o4.5 @1,25 → 7 ✅ <span class="up">+0.25u</span></div>
-        <div class="hc"><span class="chip">📐 9/10</span><span class="chip">🔥2 o4.5 ✅</span><span class="chip">💰</span><span class="chip">🎟️ 2026-10-02-b o4.5 ✅ → <span class="up">+0.00u</span></span></div></li><li><div class="hm">03.10 01:00 · São Paulo – Santos</div>
+        <div class="hc"><span class="chip">📐 9/10</span><span class="chip">🔥2 o4.5 ✅</span><span class="chip">💰</span><span class="chip">🎟️ 2026-10-02-b o4.5 ✅ → <span class="up">+0.00u</span></span></div></li><li data-bet><div class="hm">03.10 01:00 · São Paulo – Santos</div>
         <div class="hb">🚩 u10.5 @1,78 → 15 ❌ <span class="down">-1.00u</span></div>
         <div class="hc"><span class="chip">📐 8/10</span><span class="chip">⭐ u11.5 ❌</span><span class="chip">🔥1 u10.5 ❌</span><span class="chip">💰</span><span class="chip">🎟️ 2026-10-02-b u11.5 ❌ → <span class="down">-1.00u</span></span></div></li><li><div class="hm">03.10 00:30 · Detroit Red Wings – New York Rangers</div>
         <div class="hb">🏒 o4.5 @1,23 → 2 ❌ <span class="down">-1.00u</span></div>
-        <div class="hc"><span class="chip">📐 8/10</span></div></li><li><div class="hm">HC Kometa Brno – BK Mladá Boleslav (Extraliga, live)</div>
+        <div class="hc"><span class="chip">📐 8/10</span></div></li><li data-bet><div class="hm">HC Kometa Brno – BK Mladá Boleslav (Extraliga, live)</div>
         <div class="hb">🏒 o3.5 @1,45 → 5 ✅ <span class="muted">(your bet only, not a scanner pick)</span></div>
         <div class="hc"><span class="chip">🎟️ 2026-10-02-b o3.5 ✅ → <span class="up">+0.00u</span></span></div></li><li><div class="hm">02.10 04:00 · Vancouver Canucks – Edmonton Oilers</div>
         <div class="hb">🏒 o4.5 @1,16 → 16 ✅ <span class="up">+0.16u</span></div>
         <div class="hc"><span class="chip">📐 9/10</span><span class="chip">🔥3 o4.5 ✅</span><span class="chip">💰</span></div></li><li><div class="hm">02.10 03:00 · Calgary Flames – Seattle Kraken</div>
         <div class="hb">🏒 o4.5 @1,25 → 7 ✅ <span class="up">+0.25u</span></div>
-        <div class="hc"><span class="chip">📐 8/10</span></div></li><li><div class="hm">02.10 02:00 · Nashville Predators – Minnesota Wild</div>
+        <div class="hc"><span class="chip">📐 8/10</span></div></li><li data-bet><div class="hm">02.10 02:00 · Nashville Predators – Minnesota Wild</div>
         <div class="hb">🏒 o4.5 @1,23 → 4 ❌ <span class="down">-1.00u</span></div>
-        <div class="hc"><span class="chip">📐 9/10</span><span class="chip">🔥1 o4.5 ❌</span><span class="chip">💰</span><span class="chip">🎟️ 2026-10-02-a o4.5 ❌ → <span class="down">-1.00u</span></span></div></li><li><div class="hm">02.10 01:00 · Columbus Blue Jackets – Buffalo Sabres</div>
+        <div class="hc"><span class="chip">📐 9/10</span><span class="chip">🔥1 o4.5 ❌</span><span class="chip">💰</span><span class="chip">🎟️ 2026-10-02-a o4.5 ❌ → <span class="down">-1.00u</span></span></div></li><li data-bet><div class="hm">02.10 01:00 · Columbus Blue Jackets – Buffalo Sabres</div>
         <div class="hb">🏒 o4.5 @1,22 → 9 ✅ <span class="up">+0.22u</span></div>
         <div class="hc"><span class="chip">📐 9/10</span><span class="chip">🔥2 o4.5 ✅</span><span class="chip">💰</span><span class="chip">🎟️ 2026-10-02-a o4.5 ✅ → <span class="up">+0.00u</span></span></div></li></ol>
   <div class="tabs pages" role="group" aria-label="Page"><button type="button" data-step="-1">‹ Newer</button><span class="pageno meta"></span><button type="button" data-step="1">Older ›</button></div>
@@ -2165,14 +2166,17 @@ document.querySelectorAll('.tabs button[data-p]').forEach((b) => b.addEventListe
 }));
 // History: 10 / 20 / 50 rows per page, newest first.
 (() => {
-  const rows = [...document.querySelectorAll('.hist > li')];
-  if (!rows.length) return;
-  let size = 10, page = 0;
+  const all = [...document.querySelectorAll('.hist > li')];
+  if (!all.length) return;
+  const only = document.querySelector('.onlybets');
+  let size = 10, page = 0, rows = all;
   const show = () => {
+    rows = only.checked ? all.filter((r) => r.hasAttribute('data-bet')) : all;
+    all.forEach((r) => { r.hidden = true; });
     const pages = Math.max(1, Math.ceil(rows.length / size));
     page = Math.min(Math.max(page, 0), pages - 1);
     rows.forEach((r, i) => { r.hidden = i < page * size || i >= (page + 1) * size; });
-    document.querySelector('.pageno').textContent = 'Page ' + (page + 1) + ' of ' + pages + ' · ' + rows.length + ' bets';
+    document.querySelector('.pageno').textContent = 'Page ' + (page + 1) + ' of ' + pages + ' · ' + rows.length + ' ' + (only.checked ? 'of your bets' : 'scanned bets');
     document.querySelector('[data-step="-1"]').disabled = page === 0;
     document.querySelector('[data-step="1"]').disabled = page === pages - 1;
   };
@@ -2180,6 +2184,7 @@ document.querySelectorAll('.tabs button[data-p]').forEach((b) => b.addEventListe
     document.querySelectorAll('.pager button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
     size = Number(b.dataset.n); page = 0; show();
   }));
+  only.addEventListener('change', () => { page = 0; show(); });
   document.querySelectorAll('.pages button').forEach((b) => b.addEventListener('click', () => { page += Number(b.dataset.step); show(); }));
   show();
 })();
