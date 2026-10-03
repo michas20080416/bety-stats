@@ -32,9 +32,16 @@ h2 { font:800 22px var(--display); text-transform:uppercase; letter-spacing:.03e
 .hint { margin:-4px 0 10px; color:var(--muted); font-size:13px; max-width:80ch }
 .hint b { color:var(--ink) }
 section > .hint:first-child { margin-top:14px }
+.hist { list-style:none; margin:0; padding:0; display:grid; gap:8px }
+.hist li { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:10px 12px; min-width:0 }
+.hm { font:600 13px var(--body); color:var(--muted); overflow-wrap:anywhere }
+.hb { font:600 15px var(--body); margin-top:2px; overflow-wrap:anywhere }
+.hc { display:flex; flex-wrap:wrap; gap:6px; margin-top:6px }
+.chip { font:500 12px var(--mono); background:var(--chip); border-radius:999px; padding:2px 8px; white-space:nowrap }
+.muted { color:var(--muted); font-weight:400; font-size:13px }
 </style></head><body><div class="wrap">
 <h1>Bety Skaner stats</h1>
-<div class="meta">Updated 3.10.2026, 10:54 · 7 settled picks since 2026-10-02 · 1 waiting for results · 0 void</div>
+<div class="meta">Updated 3.10.2026, 11:18 · 7 settled picks since 2026-10-02 · 2 waiting for results · 0 void</div>
 <div class="tabs" role="group" aria-label="Period"><button type="button" data-p="all" aria-pressed="true">All time</button><button type="button" data-p="30" aria-pressed="false">Last 30 days</button><button type="button" data-p="7" aria-pressed="false">Last 7 days</button></div>
 <section data-p="all">
   <p class="hint">The big three in every tile: <b>predicted</b> = the average hr (weighted hit rate) the picks had before kickoff · <b>real</b> = the big %, picks that actually won · <b>your slips</b> = how your own bets did. Predicted well above real = the hr is too optimistic there. Big % = bets won out of bets settled. <b>u</b> = profit if you bet 1 unit on every pick at its Betclic odds (1u = your usual stake, e.g. −0.62u at 100 zł = −62 zł). <b>ROI</b> = profit per 100 bet (−21% = lost 21 zł for every 100 zł). <b>your slips</b> = your own AKO slips with a leg in that square, won/lost by the whole slip (a winning leg on a lost slip is a loss); the u there is only that leg's part: a won slip's profit is split by each leg's odds − 1 (e.g. @1,45 + @1,50 + @1,25 → 37.5% / 41.7% / 20.8%), a lost slip's −1u goes to the leg(s) that lost.</p>
@@ -170,6 +177,30 @@ section > .hint:first-child { margin-top:14px }
     <div class="wl">4 won / 3 lost</div>
     <div class="pf"><span class="down">-2.12u</span> · ROI -30%</div>
     <div class="mine">your slips: 0/2 (0%) · <span class="down">-2.00u</span></div>
+  </div></div>
+  <h2>By H2H pattern</h2>
+  <p class="hint">Every pick (cards, corners and hockey goals together) at its pick line, grouped by how strong its H2H was: 10/10 = all 10 last H2H games hit, 9/10 = one miss, 8/10 = two misses. 8/8, 9/9 … = fewer than 10 H2H games in the last 5 years. Shows whether a stronger pattern really wins more often.</p>
+  <div class="grid"><div class="tile empty">
+    <div class="tl">📐 10/10</div>
+    <div class="pct">–</div>
+    
+    <div class="wl">no settled bets yet</div>
+    <div class="pf"></div>
+    
+  </div><div class="tile mid">
+    <div class="tl">📐 9/10</div>
+    <div class="pct">75%</div>
+    
+    <div class="wl">3 won / 1 lost</div>
+    <div class="pf"><span class="down">-0.37u</span> · ROI -9%</div>
+    
+  </div><div class="tile bad">
+    <div class="tl">📐 8/10</div>
+    <div class="pct">33%</div>
+    
+    <div class="wl">1 won / 2 lost</div>
+    <div class="pf"><span class="down">-1.75u</span> · ROI -58%</div>
+    
   </div></div>
   <h2>Markets</h2>
   <p class="hint">Every pick of that market at its pick line. Picks without Betclic odds count for the % only, not for u / ROI.</p>
@@ -531,6 +562,30 @@ section > .hint:first-child { margin-top:14px }
     <div class="pf"><span class="down">-2.12u</span> · ROI -30%</div>
     <div class="mine">your slips: 0/2 (0%) · <span class="down">-2.00u</span></div>
   </div></div>
+  <h2>By H2H pattern</h2>
+  <p class="hint">Every pick (cards, corners and hockey goals together) at its pick line, grouped by how strong its H2H was: 10/10 = all 10 last H2H games hit, 9/10 = one miss, 8/10 = two misses. 8/8, 9/9 … = fewer than 10 H2H games in the last 5 years. Shows whether a stronger pattern really wins more often.</p>
+  <div class="grid"><div class="tile empty">
+    <div class="tl">📐 10/10</div>
+    <div class="pct">–</div>
+    
+    <div class="wl">no settled bets yet</div>
+    <div class="pf"></div>
+    
+  </div><div class="tile mid">
+    <div class="tl">📐 9/10</div>
+    <div class="pct">75%</div>
+    
+    <div class="wl">3 won / 1 lost</div>
+    <div class="pf"><span class="down">-0.37u</span> · ROI -9%</div>
+    
+  </div><div class="tile bad">
+    <div class="tl">📐 8/10</div>
+    <div class="pct">33%</div>
+    
+    <div class="wl">1 won / 2 lost</div>
+    <div class="pf"><span class="down">-1.75u</span> · ROI -58%</div>
+    
+  </div></div>
   <h2>Markets</h2>
   <p class="hint">Every pick of that market at its pick line. Picks without Betclic odds count for the % only, not for u / ROI.</p>
   <div class="grid"><div class="tile empty">
@@ -891,6 +946,30 @@ section > .hint:first-child { margin-top:14px }
     <div class="pf"><span class="down">-2.12u</span> · ROI -30%</div>
     <div class="mine">your slips: 0/2 (0%) · <span class="down">-2.00u</span></div>
   </div></div>
+  <h2>By H2H pattern</h2>
+  <p class="hint">Every pick (cards, corners and hockey goals together) at its pick line, grouped by how strong its H2H was: 10/10 = all 10 last H2H games hit, 9/10 = one miss, 8/10 = two misses. 8/8, 9/9 … = fewer than 10 H2H games in the last 5 years. Shows whether a stronger pattern really wins more often.</p>
+  <div class="grid"><div class="tile empty">
+    <div class="tl">📐 10/10</div>
+    <div class="pct">–</div>
+    
+    <div class="wl">no settled bets yet</div>
+    <div class="pf"></div>
+    
+  </div><div class="tile mid">
+    <div class="tl">📐 9/10</div>
+    <div class="pct">75%</div>
+    
+    <div class="wl">3 won / 1 lost</div>
+    <div class="pf"><span class="down">-0.37u</span> · ROI -9%</div>
+    
+  </div><div class="tile bad">
+    <div class="tl">📐 8/10</div>
+    <div class="pct">33%</div>
+    
+    <div class="wl">1 won / 2 lost</div>
+    <div class="pf"><span class="down">-1.75u</span> · ROI -58%</div>
+    
+  </div></div>
   <h2>Markets</h2>
   <p class="hint">Every pick of that market at its pick line. Picks without Betclic odds count for the % only, not for u / ROI.</p>
   <div class="grid"><div class="tile empty">
@@ -1117,6 +1196,25 @@ section > .hint:first-child { margin-top:14px }
     <div class="pf"></div>
     <div class="mine">your slips: –</div>
   </div></div></section>
+<h2>History</h2>
+  <p class="hint">Every resolved bet, newest first, and where it counted. The main line is the pick line at 1u (that's what ⚽ All picks, the markets, lines and 📐 patterns count). Chips: 📐 its H2H pattern · ⭐ pewniak line · 🔥 TOP 5 line · 💰 value · 👻 ALT line · 🔀 MIXED pair, each with its own ✅/❌ when judged at another line · 🎟️ your slip's leg and its part of the slip.</p>
+  <ol class="hist"><li><div class="hm">03.10 02:00 · Winnipeg Jets – Boston Bruins</div>
+        <div class="hb">🏒 o4.5 @1,25 → 7 ✅ <span class="up">+0.25u</span></div>
+        <div class="hc"><span class="chip">📐 9/10</span><span class="chip">🔥2 o4.5 ✅</span><span class="chip">💰</span><span class="chip">🎟️ 2026-10-02-b o4.5 ✅ → <span class="up">+0.00u</span></span></div></li><li><div class="hm">03.10 01:00 · São Paulo – Santos</div>
+        <div class="hb">🚩 u10.5 @1,78 → 15 ❌ <span class="down">-1.00u</span></div>
+        <div class="hc"><span class="chip">📐 8/10</span><span class="chip">⭐ u11.5 ❌</span><span class="chip">🔥1 u10.5 ❌</span><span class="chip">💰</span><span class="chip">🎟️ 2026-10-02-b u11.5 ❌ → <span class="down">-1.00u</span></span></div></li><li><div class="hm">03.10 00:30 · Detroit Red Wings – New York Rangers</div>
+        <div class="hb">🏒 o4.5 @1,23 → 2 ❌ <span class="down">-1.00u</span></div>
+        <div class="hc"><span class="chip">📐 8/10</span></div></li><li><div class="hm">02.10 04:00 · Vancouver Canucks – Edmonton Oilers</div>
+        <div class="hb">🏒 o4.5 @1,16 → 16 ✅ <span class="up">+0.16u</span></div>
+        <div class="hc"><span class="chip">📐 9/10</span><span class="chip">🔥3 o4.5 ✅</span><span class="chip">💰</span></div></li><li><div class="hm">02.10 03:00 · Calgary Flames – Seattle Kraken</div>
+        <div class="hb">🏒 o4.5 @1,25 → 7 ✅ <span class="up">+0.25u</span></div>
+        <div class="hc"><span class="chip">📐 8/10</span></div></li><li><div class="hm">02.10 02:00 · Nashville Predators – Minnesota Wild</div>
+        <div class="hb">🏒 o4.5 @1,23 → 4 ❌ <span class="down">-1.00u</span></div>
+        <div class="hc"><span class="chip">📐 9/10</span><span class="chip">🔥1 o4.5 ❌</span><span class="chip">💰</span><span class="chip">🎟️ 2026-10-02-a o4.5 ❌ → <span class="down">-1.00u</span></span></div></li><li><div class="hm">02.10 01:00 · Columbus Blue Jackets – Buffalo Sabres</div>
+        <div class="hb">🏒 o4.5 @1,22 → 9 ✅ <span class="up">+0.22u</span></div>
+        <div class="hc"><span class="chip">📐 9/10</span><span class="chip">🔥2 o4.5 ✅</span><span class="chip">💰</span><span class="chip">🎟️ 2026-10-02-a o4.5 ✅ → <span class="up">+0.00u</span></span></div></li><li><div class="hm">HC Kometa Brno – BK Mladá Boleslav (Extraliga, live)</div>
+        <div class="hb">🏒 o3.5 @1,45 → 5 ✅ <span class="muted">(your bet only, not a scanner pick)</span></div>
+        <div class="hc"><span class="chip">🎟️ 2026-10-02-b o3.5 ✅ → <span class="up">+0.00u</span></span></div></li></ol>
 <p class="note">Postponed or cancelled matches don't count.</p>
 </div>
 <script>
